@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1361c4"/>
+      <stop offset="55%" style="stop-color:#0d4da0"/>
+      <stop offset="100%" style="stop-color:#093d82"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="400" fill="url(#heroBg)"/>
+
+  <!-- Simplified world map outlines, opacity low so they're subtle -->
+  <g fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-linejoin="round">
+    <!-- North America -->
+    <path d="M 170 80 L 155 95 L 140 100 L 130 115 L 120 130 L 115 150 L 120 170 L 130 185 L 145 195 L 160 200 L 175 195 L 190 180 L 200 165 L 210 145 L 215 125 L 210 105 L 195 88 Z"/>
+    <path d="M 200 165 L 210 175 L 225 185 L 235 195 L 230 210 L 220 220 L 210 215 L 200 205 L 195 195 L 198 180 Z"/>
+    <!-- Greenland -->
+    <path d="M 240 45 L 255 40 L 270 45 L 280 58 L 278 72 L 265 80 L 248 78 L 238 65 Z"/>
+    <!-- South America -->
+    <path d="M 245 210 L 255 200 L 268 205 L 278 218 L 282 235 L 280 255 L 275 275 L 265 295 L 252 310 L 240 318 L 228 312 L 220 298 L 218 278 L 222 258 L 228 238 L 235 220 Z"/>
+    <!-- Europe -->
+    <path d="M 480 70 L 495 65 L 510 68 L 522 75 L 528 88 L 522 100 L 510 108 L 496 110 L 482 105 L 474 95 L 475 82 Z"/>
+    <path d="M 510 108 L 525 115 L 535 125 L 532 140 L 520 148 L 508 145 L 500 135 L 502 120 Z"/>
+    <!-- Africa -->
+    <path d="M 490 150 L 508 145 L 525 150 L 538 165 L 545 185 L 548 210 L 545 235 L 538 258 L 525 278 L 510 292 L 495 298 L 480 292 L 468 275 L 460 255 L 458 230 L 460 205 L 465 182 L 472 163 Z"/>
+    <!-- Middle East -->
+    <path d="M 548 150 L 562 145 L 578 150 L 588 162 L 585 178 L 572 185 L 558 182 L 548 170 Z"/>
+    <!-- Asia main -->
+    <path d="M 588 65 L 620 58 L 660 55 L 700 58 L 735 65 L 760 78 L 775 92 L 778 110 L 770 128 L 755 140 L 738 148 L 718 152 L 698 150 L 678 145 L 658 138 L 640 128 L 622 115 L 608 100 L 598 85 Z"/>
+    <!-- India -->
+    <path d="M 638 152 L 655 148 L 672 155 L 680 170 L 678 188 L 668 202 L 655 210 L 642 205 L 633 192 L 630 175 Z"/>
+    <!-- Southeast Asia -->
+    <path d="M 720 155 L 738 152 L 752 160 L 758 175 L 752 190 L 738 198 L 722 195 L 712 183 L 712 168 Z"/>
+    <!-- Japan/Korea -->
+    <path d="M 790 88 L 800 82 L 812 85 L 818 96 L 815 108 L 804 114 L 793 110 L 787 100 Z"/>
+    <!-- Australia -->
+    <path d="M 762 240 L 785 232 L 812 235 L 835 245 L 850 262 L 855 282 L 848 302 L 832 315 L 812 320 L 792 315 L 775 302 L 762 282 L 758 262 Z"/>
+    <!-- Indonesia archipelago (simplified) -->
+    <path d="M 730 198 L 745 195 L 758 200 L 762 212 L 752 220 L 738 218 L 728 208 Z"/>
+    <path d="M 762 205 L 778 202 L 790 208 L 792 220 L 780 228 L 765 225 Z"/>
+  </g>
+
+  <!-- Connection lines between regions (network / data flow feel) -->
+  <g stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4 6">
+    <line x1="195" y1="165" x2="490" y2="110"/>
+    <line x1="490" y1="150" x2="638" y2="175"/>
+    <line x1="510" y1="110" x2="640" y2="80"/>
+    <line x1="680" y1="105" x2="790" y2="95"/>
+    <line x1="268" y1="255" x2="490" y2="220"/>
+    <line x1="545" y1="210" x2="638" y2="175"/>
+    <line x1="720" y1="172" x2="800" y2="260"/>
+  </g>
+
+  <!-- Data point nodes at key cities/regions -->
+  <g fill="rgba(255,255,255,0.22)">
+    <circle cx="195" cy="165" r="4"/>
+    <circle cx="268" cy="255" r="3.5"/>
+    <circle cx="490" cy="110" r="4"/>
+    <circle cx="505" cy="220" r="3.5"/>
+    <circle cx="638" cy="175" r="4"/>
+    <circle cx="655" cy="88" r="3"/>
+    <circle cx="720" cy="172" r="3.5"/>
+    <circle cx="795" cy="95" r="3"/>
+    <circle cx="800" cy="270" r="3.5"/>
+    <circle cx="548" cy="162" r="3"/>
+    <circle cx="140" cy="115" r="3"/>
+  </g>
+
+  <!-- Subtle pulse rings on a couple nodes -->
+  <g fill="none" stroke="rgba(255,255,255,0.07)">
+    <circle cx="490" cy="110" r="12"/>
+    <circle cx="490" cy="110" r="22"/>
+    <circle cx="638" cy="175" r="10"/>
+    <circle cx="638" cy="175" r="20"/>
+  </g>
+</svg>
